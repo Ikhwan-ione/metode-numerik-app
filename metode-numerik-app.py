@@ -62,7 +62,7 @@ animations = {
     "integrasi": "https://assets5.lottiefiles.com/private_files/lf30_tw7yg1gi.json"
 }
 
-# Fungsi-fungsi numerik (tetap sama seperti sebelumnya)
+# Fungsi-fungsi numerik
 def hitung_basis_lagrange(data_x, idx, nilai_x):
     basis = 1
     for j, x in enumerate(data_x):
@@ -76,7 +76,7 @@ def interpolasi_lagrange(data_x, data_y, nilai_x):
         hasil += y * hitung_basis_lagrange(data_x, i, nilai_x)
     return hasil
 
-# Fungsi-fungsi integrasi (tetap sama)
+# Fungsi-fungsi integrasi
 def trapezoidal_rule(func, a, b, n):
     h = (b - a) / n
     x = np.linspace(a, b, n + 1)
