@@ -124,7 +124,7 @@ with st.sidebar:
         for member in team_data:
             with st.container():
                 st.markdown(f"""
-                    <div style='background-color: #000000; padding: 10px; border-radius: 5px; margin: 5px;'>
+                    <div style='background-color: #90d5ff; padding: 10px; border-radius: 5px; margin: 5px;'>
                         <h4 style='margin: 0;'>{member['nama']}</h4>
                         <p style='margin: 0;'>{member['nim']}</p>
                     </div>
